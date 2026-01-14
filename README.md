@@ -13,23 +13,30 @@ API endpoints can be tested with tools like Postman or directly via frontend req
 
 ---
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-node server.js
-
-```bash
-npm run dev   
-(nodemon)
-
 ## Links
 
-Open [Frontend](https://gigflow-front-fawn.vercel.app/) with your browser to see the result.
-Open [Backend](https://gigflow-back.onrender.com) with your browser to see the result.
-Open [Frontkend Repo ](https://github.com/Proo2005/gigflow_front) check the backend.
+- Open [Frontend](https://gigflow-front-fawn.vercel.app/) in your browser to see the result.  
+- Open [Backend](https://gigflow-back.onrender.com) in your browser to see the result.  
+- Check the [Frontend Repo](https://github.com/Proo2005/gigflow_front).
 
+---
+
+## .env
+
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+PORT=5000
+
+---
+
+## Run the server
+npm run dev
+
+# or
+node server.js
+
+
+---
 ## Features
 
 - User authentication (signup/login) with JWT
