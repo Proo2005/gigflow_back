@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const connectDB = async () => {
   try {
     await mongoose.connect(process.env.MONGO_URI, {
-      dbName: "gigflow", // EXTRA SAFETY
+      dbName: "gigflow", 
     });
 
     console.log("MongoDB connected to gigflow database");

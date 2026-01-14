@@ -4,7 +4,7 @@ export const getFreelancers = async (req, res) => {
   try {
     const freelancers = await User.find(
       { userType: "freelancer" },
-      { password: 0 } // hide password
+      { password: 0 } 
     );
 
     res.status(200).json(freelancers);

@@ -27,9 +27,7 @@ export const createJob = async (req, res) => {
   }
 };
 
-// @desc    Get all jobs
-// @route   GET /api/jobs
-// @access  Public
+
 export const getAllJobs = async (req, res) => {
   try {
     const jobs = await Job.find().sort({ createdAt: -1 });

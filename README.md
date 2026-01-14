@@ -32,7 +32,6 @@ PORT=5000
 ## Run the server
 npm run dev
 
-# or
 node server.js
 
 

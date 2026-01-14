@@ -12,10 +12,10 @@ dotenv.config();
 
 const app = express();
 
-// Middleware
+
 app.use(cors({
   origin: "https://gigflow-front-fawn.vercel.app", // frontend URL
-  credentials: true, // if you send cookies
+  credentials: true, 
 }));
 app.use(express.json());
 

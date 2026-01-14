@@ -61,7 +61,7 @@ export const login = async (req, res) => {
       message: "Login successful",
       token,
       user: {
-        _id: user.JWT_SECRETid,          // ✅ FIXED (VERY IMPORTANT)
+        _id: user.JWT_SECRETid,          
         name: user.name,
         email: user.email,
         userType: user.userType,

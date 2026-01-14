@@ -1,6 +1,6 @@
 import Message from "../models/message.model.js";
 
-// Create new message/offer (existing)
+
 export const createMessage = async (req, res) => {
   try {
     const {
@@ -43,7 +43,7 @@ export const createMessage = async (req, res) => {
   }
 };
 
-// GET all messages for a logged-in job poster
+
 export const getMessagesByJobPoster = async (req, res) => {
   try {
     const { email } = req.params;
@@ -55,7 +55,7 @@ export const getMessagesByJobPoster = async (req, res) => {
   }
 };
 
-// PATCH confirm a message (pending → confirmed)
+
 export const confirmMessage = async (req, res) => {
   try {
     const { id } = req.params;
@@ -74,7 +74,7 @@ export const confirmMessage = async (req, res) => {
 };
 
 
-// Get confirmed jobs for freelancer
+
 export const getConfirmedJobsForFreelancer = async (req, res) => {
   try {
     const { email } = req.params;
